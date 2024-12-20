@@ -197,6 +197,14 @@ const InsertLabelNamesPopup: React.FC<IProps> = (
                     isActive={enablePerClassColoration}
                     externalClassName={enablePerClassColoration ? '' : 'monochrome'}
                 />}
+                <ImageButton
+                    image={'ico/download.png'}
+                    imageAlt={'download'}
+                    buttonSize={{ width: 40, height: 40 }}
+                    padding={25}
+                    onClick={safeAddLabelNameCallback}
+                    externalClassName={'monochrome'}
+                />
             </div>
             <div className='RightContainer'>
                 <div className='Message'>
